@@ -14,4 +14,5 @@ public class AllegroURL {
      is the first page of allegro repositories in the form of json
      */
     public static final String URL = "https://api.github.com/users/allegro/repos?per_page=1000&page=page_no";
+    
 }
