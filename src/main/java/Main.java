@@ -15,19 +15,13 @@ public class Main {
 
         // using the readUrl () method, we read pages with repositories and assign them to
         // dataFromPage1 etc...
-        String dataFromPage1 = URLReader.readUrl(AllegroURL.URL_1);
-        String dataFromPage2 = URLReader.readUrl(AllegroURL.URL_2);
-        String dataFromPage3 = URLReader.readUrl(AllegroURL.URL_3);
+        String dataFromPage1 = URLReader.readUrl(AllegroURL.URL);
 
         // create a JSONArray and insert values ​​read from all pages
         JSONArray jsonArrayWithDataFromPage1 = new JSONArray(dataFromPage1);
-        JSONArray jsonArrayWithDataFromPage2 = new JSONArray(dataFromPage2);
-        JSONArray jsonArrayWithDataFromPage3 = new JSONArray(dataFromPage3);
 
         // data from all arrays are added to the jsonArray from ArrayWithAllRepos class
         arrayWithAllRepos.addToJsonArrayArraysWithDataFromPage(jsonArrayWithDataFromPage1);
-        arrayWithAllRepos.addToJsonArrayArraysWithDataFromPage(jsonArrayWithDataFromPage2);
-        arrayWithAllRepos.addToJsonArrayArraysWithDataFromPage(jsonArrayWithDataFromPage3);
 
         // create a list jsonValues to which we add all values ​​from the jsonArray from ArrayWithAllRepos class
         List<JSONObject> jsonValues = new ArrayList<>();
