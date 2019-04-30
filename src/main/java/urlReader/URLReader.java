@@ -28,7 +28,8 @@ public class URLReader {
                 buffer.append(chars, 0, read);
 
             return buffer.toString();
-        } finally {
+        }
+        finally {
             if (reader != null)
                 reader.close();
         }
